@@ -1,0 +1,39 @@
+login returns access token and sets refresh cookie
+Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m200[39m
+Received: [31m401[39m
+    at Object.toBe (D:\Echolink\backend\tests\auth.test.js:91:30)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+refresh rotates token and returns new access token
+Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m200[39m
+Received: [31m401[39m
+    at Object.toBe (D:\Echolink\backend\tests\auth.test.js:106:35)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+request password reset returns token (demo behaviour) and reset works
+Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m200[39m
+Received: [31m404[39m
+    at Object.toBe (D:\Echolink\backend\tests\auth.test.js:136:35)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+email verification demo flow
+Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m200[39m
+Received: [31m404[39m
+    at Object.toBe (D:\Echolink\backend\tests\auth.test.js:168:36)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+
+logout revokes refresh token and clears cookie
+Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+Expected: [32m200[39m
+Received: [31m401[39m
+    at Object.toBe (D:\Echolink\backend\tests\auth.test.js:192:35)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)

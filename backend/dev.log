@@ -1,0 +1,234 @@
+
+> echolink-backend@1.0.0 dev
+> nodemon server.js
+
+[33m[nodemon] 2.0.22[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node server.js`[39m
+[2026-02-20 06:56:28.716 PM] [32minfo[39m: 	[32mDetected Google Gemini API Key. Initializing Google Generative AI.[39m
+Server running on port 3001 
+Connected to MongoDB
+[2026-02-20 06:57:14.235 PM] [31merror[39m: 	[31m[GET /api/status] 401: Authentication required[39m
+[2026-02-20 06:57:14.236 PM] [31merror[39m: 	[31mError: Authentication required[39m
+[31m    at authenticate (d:\Echolink\backend\src\middleware\auth.middleware.js:18:13)[39m
+[31m    at Layer.handle [as handle_request] (d:\Echolink\backend\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m    at next (d:\Echolink\backend\node_modules\express\lib\router\route.js:149:13)[39m
+[31m    at Route.dispatch (d:\Echolink\backend\node_modules\express\lib\router\route.js:119:3)[39m
+[31m    at Layer.handle [as handle_request] (d:\Echolink\backend\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m    at d:\Echolink\backend\node_modules\express\lib\router\index.js:284:15[39m
+[31m    at Function.process_params (d:\Echolink\backend\node_modules\express\lib\router\index.js:346:12)[39m
+[31m    at next (d:\Echolink\backend\node_modules\express\lib\router\index.js:280:10)[39m
+[31m    at Function.handle (d:\Echolink\backend\node_modules\express\lib\router\index.js:175:3)[39m
+[31m    at router (d:\Echolink\backend\node_modules\express\lib\router\index.js:47:12)[39m
+[0mGET /api/status [33m401[0m 4.242 ms - 1082[0m
+[0mGET /health [32m200[0m 0.534 ms - 171[0m
+Password modified, hashing password: { passwordLength: 12, isNew: true }
+Password hashed: { originalLength: 12, hashedLength: 60 }
+New user created, creating refresh token: { userId: new ObjectId("69986132519d13f738e278e9") }
+Refresh token created: { found: true, userId: new ObjectId("69986132519d13f738e278e9") }
+[0mPOST /api/auth/register [32m201[0m 456.888 ms - 385[0m
+Looking up user: { email: 'test_1771594034205@echolink.test' }
+User lookup result: { found: true, hasPasswordMethod: true, passwordLength: 60 }
+Checking password match...
+Comparing passwords: { hashedLength: 60, plainLength: 12 }
+Password comparison result: true
+Password match result: true
+Creating refresh token: { userId: new ObjectId("69986132519d13f738e278e9") }
+Refresh token created: { found: true, userId: new ObjectId("69986132519d13f738e278e9") }
+[0mPOST /api/auth/login [32m200[0m 238.873 ms - 385[0m
+[0mGET /api/auth/me [32m200[0m 60.966 ms - 243[0m
+[2026-02-20 06:57:15.027 PM] [31merror[39m: 	[31m[GET /api/auth/me] 401: Authentication required[39m
+[2026-02-20 06:57:15.027 PM] [31merror[39m: 	[31mError: Authentication required[39m
+[31m    at authenticate (d:\Echolink\backend\src\middleware\auth.middleware.js:18:13)[39m
+[31m    at Layer.handle [as handle_request] (d:\Echolink\backend\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m    at next (d:\Echolink\backend\node_modules\express\lib\router\route.js:149:13)[39m
+[31m    at Route.dispatch (d:\Echolink\backend\node_modules\express\lib\router\route.js:119:3)[39m
+[31m    at Layer.handle [as handle_request] (d:\Echolink\backend\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m    at d:\Echolink\backend\node_modules\express\lib\router\index.js:284:15[39m
+[31m    at Function.process_params (d:\Echolink\backend\node_modules\express\lib\router\index.js:346:12)[39m
+[31m    at next (d:\Echolink\backend\node_modules\express\lib\router\index.js:280:10)[39m
+[31m    at Function.handle (d:\Echolink\backend\node_modules\express\lib\router\index.js:175:3)[39m
+[31m    at router (d:\Echolink\backend\node_modules\express\lib\router\index.js:47:12)[39m
+[0mGET /api/auth/me [33m401[0m 1.014 ms - 1082[0m
+Looking up user: { email: 'test_1771594034205@echolink.test' }
+User lookup result: { found: true, hasPasswordMethod: true, passwordLength: 60 }
+Checking password match...
+Comparing passwords: { hashedLength: 60, plainLength: 8 }
+Password comparison result: false
+Password match result: false
+[2026-02-20 06:57:15.129 PM] [31merror[39m: 	[31m[POST /api/auth/login] 401: Incorrect email or password[39m
+[2026-02-20 06:57:15.129 PM] [31merror[39m: 	[31mError: Incorrect email or password[39m
+[31m    at login (d:\Echolink\backend\src\controllers\auth.controller.js:212:13)[39m
+[0mPOST /api/auth/login [33m401[0m 100.386 ms - 191[0m
+[0mPOST /api/auth/register [33m400[0m 1.060 ms - 117[0m
+[2026-02-20 06:57:31.451 PM] [31merror[39m: 	[31m[GET /api/status] 401: Authentication required[39m
+[2026-02-20 06:57:31.451 PM] [31merror[39m: 	[31mError: Authentication required[39m
+[31m    at authenticate (d:\Echolink\backend\src\middleware\auth.middleware.js:18:13)[39m
+[31m    at Layer.handle [as handle_request] (d:\Echolink\backend\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m    at next (d:\Echolink\backend\node_modules\express\lib\router\route.js:149:13)[39m
+[31m    at Route.dispatch (d:\Echolink\backend\node_modules\express\lib\router\route.js:119:3)[39m
+[31m    at Layer.handle [as handle_request] (d:\Echolink\backend\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m    at d:\Echolink\backend\node_modules\express\lib\router\index.js:284:15[39m
+[31m    at Function.process_params (d:\Echolink\backend\node_modules\express\lib\router\index.js:346:12)[39m
+[31m    at next (d:\Echolink\backend\node_modules\express\lib\router\index.js:280:10)[39m
+[31m    at Function.handle (d:\Echolink\backend\node_modules\express\lib\router\index.js:175:3)[39m
+[31m    at router (d:\Echolink\backend\node_modules\express\lib\router\index.js:47:12)[39m
+[0mGET /api/status [33m401[0m 1.652 ms - 1082[0m
+[0mGET /health [32m200[0m 0.436 ms - 172[0m
+Password modified, hashing password: { passwordLength: 12, isNew: true }
+Password hashed: { originalLength: 12, hashedLength: 60 }
+New user created, creating refresh token: { userId: new ObjectId("69986143519d13f738e278f5") }
+Refresh token created: { found: true, userId: new ObjectId("69986143519d13f738e278f5") }
+[0mPOST /api/auth/register [32m201[0m 327.757 ms - 385[0m
+Looking up user: { email: 'test_1771594051418@echolink.test' }
+User lookup result: { found: true, hasPasswordMethod: true, passwordLength: 60 }
+Checking password match...
+Comparing passwords: { hashedLength: 60, plainLength: 12 }
+Password comparison result: true
+Password match result: true
+Creating refresh token: { userId: new ObjectId("69986143519d13f738e278f5") }
+Refresh token created: { found: true, userId: new ObjectId("69986143519d13f738e278f5") }
+[0mPOST /api/auth/login [32m200[0m 217.448 ms - 385[0m
+[0mGET /api/auth/me [32m200[0m 37.290 ms - 243[0m
+[2026-02-20 06:57:32.052 PM] [31merror[39m: 	[31m[GET /api/auth/me] 401: Authentication required[39m
+[2026-02-20 06:57:32.052 PM] [31merror[39m: 	[31mError: Authentication required[39m
+[31m    at authenticate (d:\Echolink\backend\src\middleware\auth.middleware.js:18:13)[39m
+[31m    at Layer.handle [as handle_request] (d:\Echolink\backend\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m    at next (d:\Echolink\backend\node_modules\express\lib\router\route.js:149:13)[39m
+[31m    at Route.dispatch (d:\Echolink\backend\node_modules\express\lib\router\route.js:119:3)[39m
+[31m    at Layer.handle [as handle_request] (d:\Echolink\backend\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m    at d:\Echolink\backend\node_modules\express\lib\router\index.js:284:15[39m
+[31m    at Function.process_params (d:\Echolink\backend\node_modules\express\lib\router\index.js:346:12)[39m
+[31m    at next (d:\Echolink\backend\node_modules\express\lib\router\index.js:280:10)[39m
+[31m    at Function.handle (d:\Echolink\backend\node_modules\express\lib\router\index.js:175:3)[39m
+[31m    at router (d:\Echolink\backend\node_modules\express\lib\router\index.js:47:12)[39m
+[0mGET /api/auth/me [33m401[0m 0.820 ms - 1082[0m
+Looking up user: { email: 'test_1771594051418@echolink.test' }
+User lookup result: { found: true, hasPasswordMethod: true, passwordLength: 60 }
+Checking password match...
+Comparing passwords: { hashedLength: 60, plainLength: 8 }
+Password comparison result: false
+Password match result: false
+[2026-02-20 06:57:32.183 PM] [31merror[39m: 	[31m[POST /api/auth/login] 401: Incorrect email or password[39m
+[2026-02-20 06:57:32.183 PM] [31merror[39m: 	[31mError: Incorrect email or password[39m
+[31m    at login (d:\Echolink\backend\src\controllers\auth.controller.js:212:13)[39m
+[0mPOST /api/auth/login [33m401[0m 129.321 ms - 191[0m
+[0mPOST /api/auth/register [33m400[0m 0.543 ms - 117[0m
+[2026-02-20 06:57:44.106 PM] [31merror[39m: 	[31m[GET /api/status] 401: Authentication required[39m
+[2026-02-20 06:57:44.106 PM] [31merror[39m: 	[31mError: Authentication required[39m
+[31m    at authenticate (d:\Echolink\backend\src\middleware\auth.middleware.js:18:13)[39m
+[31m    at Layer.handle [as handle_request] (d:\Echolink\backend\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m    at next (d:\Echolink\backend\node_modules\express\lib\router\route.js:149:13)[39m
+[31m    at Route.dispatch (d:\Echolink\backend\node_modules\express\lib\router\route.js:119:3)[39m
+[31m    at Layer.handle [as handle_request] (d:\Echolink\backend\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m    at d:\Echolink\backend\node_modules\express\lib\router\index.js:284:15[39m
+[31m    at Function.process_params (d:\Echolink\backend\node_modules\express\lib\router\index.js:346:12)[39m
+[31m    at next (d:\Echolink\backend\node_modules\express\lib\router\index.js:280:10)[39m
+[31m    at Function.handle (d:\Echolink\backend\node_modules\express\lib\router\index.js:175:3)[39m
+[31m    at router (d:\Echolink\backend\node_modules\express\lib\router\index.js:47:12)[39m
+[0mGET /api/status [33m401[0m 0.642 ms - 1082[0m
+[0mGET /health [32m200[0m 0.199 ms - 172[0m
+Password modified, hashing password: { passwordLength: 12, isNew: true }
+Password hashed: { originalLength: 12, hashedLength: 60 }
+New user created, creating refresh token: { userId: new ObjectId("69986150519d13f738e27901") }
+Refresh token created: { found: true, userId: new ObjectId("69986150519d13f738e27901") }
+[0mPOST /api/auth/register [32m201[0m 227.965 ms - 385[0m
+Looking up user: { email: 'test_1771594064085@echolink.test' }
+User lookup result: { found: true, hasPasswordMethod: true, passwordLength: 60 }
+Checking password match...
+Comparing passwords: { hashedLength: 60, plainLength: 12 }
+Password comparison result: true
+Password match result: true
+Creating refresh token: { userId: new ObjectId("69986150519d13f738e27901") }
+Refresh token created: { found: true, userId: new ObjectId("69986150519d13f738e27901") }
+[0mPOST /api/auth/login [32m200[0m 190.137 ms - 385[0m
+[0mGET /api/auth/me [32m200[0m 36.493 ms - 243[0m
+[2026-02-20 06:57:44.574 PM] [31merror[39m: 	[31m[GET /api/auth/me] 401: Authentication required[39m
+[2026-02-20 06:57:44.574 PM] [31merror[39m: 	[31mError: Authentication required[39m
+[31m    at authenticate (d:\Echolink\backend\src\middleware\auth.middleware.js:18:13)[39m
+[31m    at Layer.handle [as handle_request] (d:\Echolink\backend\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m    at next (d:\Echolink\backend\node_modules\express\lib\router\route.js:149:13)[39m
+[31m    at Route.dispatch (d:\Echolink\backend\node_modules\express\lib\router\route.js:119:3)[39m
+[31m    at Layer.handle [as handle_request] (d:\Echolink\backend\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m    at d:\Echolink\backend\node_modules\express\lib\router\index.js:284:15[39m
+[31m    at Function.process_params (d:\Echolink\backend\node_modules\express\lib\router\index.js:346:12)[39m
+[31m    at next (d:\Echolink\backend\node_modules\express\lib\router\index.js:280:10)[39m
+[31m    at Function.handle (d:\Echolink\backend\node_modules\express\lib\router\index.js:175:3)[39m
+[31m    at router (d:\Echolink\backend\node_modules\express\lib\router\index.js:47:12)[39m
+[0mGET /api/auth/me [33m401[0m 0.789 ms - 1082[0m
+Looking up user: { email: 'test_1771594064085@echolink.test' }
+User lookup result: { found: true, hasPasswordMethod: true, passwordLength: 60 }
+Checking password match...
+Comparing passwords: { hashedLength: 60, plainLength: 8 }
+Password comparison result: false
+Password match result: false
+[2026-02-20 06:57:44.684 PM] [31merror[39m: 	[31m[POST /api/auth/login] 401: Incorrect email or password[39m
+[2026-02-20 06:57:44.684 PM] [31merror[39m: 	[31mError: Incorrect email or password[39m
+[31m    at login (d:\Echolink\backend\src\controllers\auth.controller.js:212:13)[39m
+[0mPOST /api/auth/login [33m401[0m 108.528 ms - 191[0m
+[0mPOST /api/auth/register [33m400[0m 0.421 ms - 117[0m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[2026-02-20 06:58:41.393 PM] [32minfo[39m: 	[32mDetected Google Gemini API Key. Initializing Google Generative AI.[39m
+Server running on port 3001 
+Connected to MongoDB
+[2026-02-20 06:58:48.188 PM] [31merror[39m: 	[31m[GET /api/status] 401: Authentication required[39m
+[2026-02-20 06:58:48.188 PM] [31merror[39m: 	[31mError: Authentication required[39m
+[31m    at authenticate (d:\Echolink\backend\src\middleware\auth.middleware.js:18:13)[39m
+[31m    at Layer.handle [as handle_request] (d:\Echolink\backend\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m    at next (d:\Echolink\backend\node_modules\express\lib\router\route.js:149:13)[39m
+[31m    at Route.dispatch (d:\Echolink\backend\node_modules\express\lib\router\route.js:119:3)[39m
+[31m    at Layer.handle [as handle_request] (d:\Echolink\backend\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m    at d:\Echolink\backend\node_modules\express\lib\router\index.js:284:15[39m
+[31m    at Function.process_params (d:\Echolink\backend\node_modules\express\lib\router\index.js:346:12)[39m
+[31m    at next (d:\Echolink\backend\node_modules\express\lib\router\index.js:280:10)[39m
+[31m    at Function.handle (d:\Echolink\backend\node_modules\express\lib\router\index.js:175:3)[39m
+[31m    at router (d:\Echolink\backend\node_modules\express\lib\router\index.js:47:12)[39m
+[0mGET /api/status [33m401[0m 5.318 ms - 1082[0m
+[0mGET /health [32m200[0m 0.854 ms - 171[0m
+Password modified, hashing password: { passwordLength: 12, isNew: true }
+Password hashed: { originalLength: 12, hashedLength: 60 }
+New user created, creating refresh token: { userId: new ObjectId("699861906cdf56814d4eaad8") }
+Refresh token created: { found: true, userId: new ObjectId("699861906cdf56814d4eaad8") }
+[0mPOST /api/auth/register [32m201[0m 945.489 ms - 378[0m
+Looking up user: { email: 'p1_1771594128154@test.com' }
+User lookup result: { found: true, hasPasswordMethod: true, passwordLength: 60 }
+Checking password match...
+Comparing passwords: { hashedLength: 60, plainLength: 12 }
+Password comparison result: true
+Password match result: true
+Creating refresh token: { userId: new ObjectId("699861906cdf56814d4eaad8") }
+Refresh token created: { found: true, userId: new ObjectId("699861906cdf56814d4eaad8") }
+[0mPOST /api/auth/login [32m200[0m 483.211 ms - 378[0m
+[0mGET /api/auth/me [32m200[0m 303.943 ms - 236[0m
+[2026-02-20 06:58:49.969 PM] [31merror[39m: 	[31m[GET /api/auth/me] 401: Authentication required[39m
+[2026-02-20 06:58:49.969 PM] [31merror[39m: 	[31mError: Authentication required[39m
+[31m    at authenticate (d:\Echolink\backend\src\middleware\auth.middleware.js:18:13)[39m
+[31m    at Layer.handle [as handle_request] (d:\Echolink\backend\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m    at next (d:\Echolink\backend\node_modules\express\lib\router\route.js:149:13)[39m
+[31m    at Route.dispatch (d:\Echolink\backend\node_modules\express\lib\router\route.js:119:3)[39m
+[31m    at Layer.handle [as handle_request] (d:\Echolink\backend\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m    at d:\Echolink\backend\node_modules\express\lib\router\index.js:284:15[39m
+[31m    at Function.process_params (d:\Echolink\backend\node_modules\express\lib\router\index.js:346:12)[39m
+[31m    at next (d:\Echolink\backend\node_modules\express\lib\router\index.js:280:10)[39m
+[31m    at Function.handle (d:\Echolink\backend\node_modules\express\lib\router\index.js:175:3)[39m
+[31m    at router (d:\Echolink\backend\node_modules\express\lib\router\index.js:47:12)[39m
+[0mGET /api/auth/me [33m401[0m 3.809 ms - 1082[0m
+Looking up user: { email: 'p1_1771594128154@test.com' }
+User lookup result: { found: true, hasPasswordMethod: true, passwordLength: 60 }
+Checking password match...
+Comparing passwords: { hashedLength: 60, plainLength: 8 }
+Password comparison result: false
+Password match result: false
+[2026-02-20 06:58:50.091 PM] [31merror[39m: 	[31m[POST /api/auth/login] 401: Incorrect email or password[39m
+[2026-02-20 06:58:50.091 PM] [31merror[39m: 	[31mError: Incorrect email or password[39m
+[31m    at login (d:\Echolink\backend\src\controllers\auth.controller.js:212:13)[39m
+[0mPOST /api/auth/login [33m401[0m 115.970 ms - 191[0m
+[0mPOST /api/auth/register [33m400[0m 1.800 ms - 117[0m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node server.js`[39m
+[2026-02-20 06:58:51.855 PM] [32minfo[39m: 	[32mDetected Google Gemini API Key. Initializing Google Generative AI.[39m
+Server running on port 3001 
+Connected to MongoDB

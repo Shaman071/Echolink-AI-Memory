@@ -1,0 +1,69 @@
+[2026-02-18T16:26:43.975Z] [INFO] 
+================================================================================
+[2026-02-18T16:26:43.989Z] [INFO] ECHOLINK DIAGNOSTIC & AUTO-FIX
+[2026-02-18T16:26:43.989Z] [INFO] ================================================================================
+
+[2026-02-18T16:26:43.989Z] [INFO] Started: 2026-02-18T16:26:43.989Z
+[2026-02-18T16:26:43.989Z] [INFO] 
+[2026-02-18T16:26:43.990Z] [INFO] 
+================================================================================
+[2026-02-18T16:26:43.990Z] [INFO] Checking MongoDB Connection
+[2026-02-18T16:26:43.990Z] [INFO] ================================================================================
+
+[2026-02-18T16:26:44.662Z] [INFO] ✓ MongoDB connection successful
+[2026-02-18T16:26:44.669Z] [INFO] 
+================================================================================
+[2026-02-18T16:26:44.669Z] [INFO] Checking Embedding Service
+[2026-02-18T16:26:44.669Z] [INFO] ================================================================================
+
+[2026-02-18T16:26:44.686Z] [WARN] ✗ Embedding service unreachable: 
+[2026-02-18T16:26:44.686Z] [ACTION] Action: Start embedding service with: python embed_service/app.py
+[2026-02-18T16:26:44.686Z] [INFO] 
+================================================================================
+[2026-02-18T16:26:44.687Z] [INFO] Checking Backend API
+[2026-02-18T16:26:44.687Z] [INFO] ================================================================================
+
+[2026-02-18T16:26:44.773Z] [INFO] ✓ Backend API reachable on port 3001
+[2026-02-18T16:26:44.773Z] [INFO]   - Status: ok
+[2026-02-18T16:26:44.773Z] [INFO] 
+================================================================================
+[2026-02-18T16:26:44.774Z] [INFO] Checking Required API Routes
+[2026-02-18T16:26:44.774Z] [INFO] ================================================================================
+
+[2026-02-18T16:26:44.810Z] [INFO] ✓ Route exists: POST /auth/register (Status 400)
+[2026-02-18T16:26:44.814Z] [INFO] ✓ Route exists: POST /auth/login (Status 400)
+[2026-02-18T16:26:44.848Z] [INFO] ✓ Route exists: POST /import/upload (Status 401)
+[2026-02-18T16:26:44.852Z] [INFO] ✓ Route exists: POST /import/text (Status 401)
+[2026-02-18T16:26:44.858Z] [INFO] ✓ Route exists: GET /import/sources (Status 401)
+[2026-02-18T16:26:44.862Z] [INFO] ✓ Route exists: POST /query (Status 401)
+[2026-02-18T16:26:44.866Z] [INFO] ✓ Route exists: GET /graph (Status 401)
+[2026-02-18T16:26:44.870Z] [INFO] ✓ Route exists: GET /status (Status 401)
+[2026-02-18T16:26:44.874Z] [INFO] ✓ Route exists: POST /admin/reindex-all (Status 401)
+[2026-02-18T16:26:44.874Z] [INFO] 
+================================================================================
+[2026-02-18T16:26:44.874Z] [INFO] Checking Environment Variables
+[2026-02-18T16:26:44.875Z] [INFO] ================================================================================
+
+[2026-02-18T16:26:44.875Z] [INFO] ✓ backend/.env exists
+[2026-02-18T16:26:44.875Z] [INFO]   - OPENAI_API_KEY is configured
+[2026-02-18T16:26:44.876Z] [INFO]   - EMBEDDING_SERVICE_URL is configured
+[2026-02-18T16:26:44.876Z] [INFO]   - MONGODB_URI is configured
+[2026-02-18T16:26:44.876Z] [INFO] ✓ frontend/.env exists
+[2026-02-18T16:26:44.876Z] [INFO]   - VITE_API_URL is configured
+[2026-02-18T16:26:44.877Z] [INFO] 
+================================================================================
+[2026-02-18T16:26:44.877Z] [INFO] Diagnostic Report Summary
+[2026-02-18T16:26:44.877Z] [INFO] ================================================================================
+
+[2026-02-18T16:26:44.877Z] [INFO] 
+[2026-02-18T16:26:44.877Z] [INFO] NEXT STEPS:
+[2026-02-18T16:26:44.877Z] [INFO] 
+[2026-02-18T16:26:44.877Z] [INFO] 1. Ensure all services are running:
+[2026-02-18T16:26:44.878Z] [INFO]    - Terminal 1: cd embed_service && python app.py
+[2026-02-18T16:26:44.878Z] [INFO]    - Terminal 2: cd backend && npm start
+[2026-02-18T16:26:44.878Z] [INFO]    - Terminal 3: cd frontend && npm run dev
+[2026-02-18T16:26:44.878Z] [INFO] 
+[2026-02-18T16:26:44.878Z] [INFO] 2. Verify system health with this script.
+[2026-02-18T16:26:44.878Z] [INFO] 
+[2026-02-18T16:26:44.878Z] [INFO] For more details, see: D:\Echolink\fix-report.txt
+[2026-02-18T16:26:44.878Z] [INFO] 

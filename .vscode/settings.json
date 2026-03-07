@@ -1,0 +1,7 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/embed_service/.venv/Scripts/python.exe",
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/embed_service/.venv/Lib/site-packages"
+  ],
+  "python.terminal.activateEnvironment": true
+}

@@ -1,0 +1,10 @@
+12/01/2025, 8:32 PM - You: Let's use React for frontend
+12/01/2025, 8:33 PM - Ravi: Sure, MERN will be easier
+12/01/2025, 8:35 PM - Meena: React has a huge ecosystem for UI
+13/01/2025, 9:00 AM - You: Backend: Node + Express seems fine
+13/01/2025, 9:05 AM - Ravi: We can deploy on Vercel or Heroku
+14/01/2025, 10:20 AM - You: Should we use Firebase for auth?
+14/01/2025, 10:22 AM - Ravi: Firebase is quick but locks you in
+15/01/2025, 11:15 AM - Meena: If scale grows, consider MongoDB Atlas
+21/02/2025, 3:30 PM - Ravi: Agreed — MERN it is
+22/02/2025, 4:00 PM - You: Also think about CI/CD with GitHub Actions

@@ -1,0 +1,66 @@
+WhatsApp Parser > Message Parsing > should handle different date formats
+WhatsApp Parser > Message Parsing > should handle empty or invalid input
+Full Integration Test: Upload → Index → Search → Graph > Phase 1: Authentication > should login with credentials
+Full Integration Test: Upload → Index → Search → Graph > Phase 2: Upload & Parse > should upload plain text
+Full Integration Test: Upload → Index → Search → Graph > Phase 2: Upload & Parse > should retrieve uploaded source
+Full Integration Test: Upload → Index → Search → Graph > Phase 3: Indexing & Embeddings > should trigger manual indexing
+Full Integration Test: Upload → Index → Search → Graph > Phase 3: Indexing & Embeddings > should have indexed fragments
+Full Integration Test: Upload → Index → Search → Graph > Phase 4: Semantic Search > should perform semantic search
+Full Integration Test: Upload → Index → Search → Graph > Phase 4: Semantic Search > should return empty results for irrelevant query
+Full Integration Test: Upload → Index → Search → Graph > Phase 5: Knowledge Graph & Links > should rebuild links
+Full Integration Test: Upload → Index → Search → Graph > Phase 5: Knowledge Graph & Links > should get graph data
+Full Integration Test: Upload → Index → Search → Graph > Phase 5: Knowledge Graph & Links > should get timeline data
+Full Integration Test: Upload → Index → Search → Graph > Phase 6: Admin Functions > should get system status
+Full Integration Test: Upload → Index → Search → Graph > Phase 6: Admin Functions > should get admin status
+Full Integration Test: Upload → Index → Search → Graph > Phase 7: Data Management > should delete source and fragments
+Full Integration Test: Upload → Index → Search → Graph > Phase 7: Data Management > should verify source is deleted
+Query Error Conditions > Query Length Validation > should reject empty queries
+Query Error Conditions > Query Length Validation > should reject queries with only whitespace
+Query Error Conditions > Query Length Validation > should handle very long queries
+Query Error Conditions > Query Length Validation > should truncate extremely long queries gracefully
+Query Error Conditions > Special Characters and Injection > should handle queries with special characters
+Query Error Conditions > Special Characters and Injection > should handle Unicode and emoji characters
+Query Error Conditions > Special Characters and Injection > should handle queries with newlines and tabs
+Query Error Conditions > Parameter Validation > should validate topK parameter
+Query Error Conditions > Parameter Validation > should handle very large topK values
+Query Error Conditions > Parameter Validation > should handle non-numeric topK
+Query Error Conditions > Backend Failure Scenarios > should return empty results for queries with no matches
+Query Error Conditions > Response Format Validation > should always return correct response structure
+Query Error Conditions > Response Format Validation > should include all required evidence fields
+Query Error Conditions > Rate Limiting > should handle rapid successive queries
+Upload Error Conditions > Invalid File Types > should reject executable files
+Upload Error Conditions > Invalid File Types > should reject unsupported image formats
+Upload Error Conditions > File Size Limits > should reject files larger than 50MB
+Upload Error Conditions > File Size Limits > should accept files under 50MB
+Upload Error Conditions > Corrupted WhatsApp Files > should handle WhatsApp file with no valid messages
+Upload Error Conditions > Corrupted WhatsApp Files > should handle WhatsApp file with missing timestamps
+Upload Error Conditions > Corrupted WhatsApp Files > should handle empty WhatsApp file
+Upload Error Conditions > Network Failure Simulation > should handle database connection errors gracefully
+Upload Error Conditions > Network Failure Simulation > should handle concurrent upload requests
+Upload Error Conditions > Fragment Creation Validation > should create fragments with correct metadata
+Upload Error Conditions > Fragment Creation Validation > should prevent duplicate fragment creation
+Indexer Service > indexFragments > should handle empty fragment list
+WhatsApp Import API > POST /api/import/whatsapp > should upload, parse, and import a WhatsApp chat file
+WhatsApp Import API > POST /api/import/whatsapp > should return error for empty file
+WhatsApp Import API > POST /api/import/whatsapp > should require authentication
+WhatsApp Import API > POST /api/import/whatsapp > should handle file with no valid WhatsApp messages
+Admin Tools Integration Tests > System Status Endpoint > should return comprehensive system status
+Admin Tools Integration Tests > System Status Endpoint > should include processing counts
+Admin Tools Integration Tests > System Status Endpoint > should include recent activity
+Admin Tools Integration Tests > Reindex All Sources > should trigger reindexing for all user sources
+Admin Tools Integration Tests > Reindex All Sources > should update source status during reindexing
+Admin Tools Integration Tests > Reindex All Sources > should handle reindex with no sources
+Admin Tools Integration Tests > Rebuild Links > should rebuild links for all fragments
+Admin Tools Integration Tests > Purge Old Data > should purge data older than specified days
+Admin Tools Integration Tests > Purge Old Data > should not delete recent data
+Admin Tools Integration Tests > Purge Old Data > should use default 30 days if not specified
+Admin Tools Integration Tests > Purge Old Data > should handle invalid days parameter
+Admin Tools Integration Tests > Worker Status Endpoint > should return worker status information
+Admin Tools Integration Tests > Logs Endpoint > should return system logs
+Admin Tools Integration Tests > Error Handling > should handle database errors gracefully
+Auth flows > registration and login > login returns access token and sets refresh cookie
+Auth flows > token refresh > refresh rotates token and returns new access token
+Auth flows > password reset > request password reset returns token (demo behaviour) and reset works
+Auth flows > email verification > email verification demo flow
+Auth flows > logout > logout revokes refresh token and clears cookie
+Query Endpoint > POST /api/query > should search fragments and return results with summary

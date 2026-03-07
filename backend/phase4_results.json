@@ -1,0 +1,75 @@
+{
+  "passed": 10,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Register and login",
+      "pass": true
+    },
+    {
+      "name": "Upload content for summary testing",
+      "pass": true,
+      "detail": {
+        "inserted": 5
+      }
+    },
+    {
+      "name": "Query \"Why did we choose MERN?\" returns non-empty summary",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "summaryLen": 166
+      }
+    },
+    {
+      "name": "Prompt injection attempt does not crash",
+      "pass": true,
+      "detail": {
+        "status": 200
+      }
+    },
+    {
+      "name": "Query with HTML/script tags does not crash",
+      "pass": true,
+      "detail": {
+        "status": 200
+      }
+    },
+    {
+      "name": "Query with only whitespace returns 400",
+      "pass": true,
+      "detail": {
+        "status": 400
+      }
+    },
+    {
+      "name": "Query with null q returns 400",
+      "pass": true,
+      "detail": {
+        "status": 400
+      }
+    },
+    {
+      "name": "Summary never contains \"undefined\" string",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "summary": "Based on the search for \"MERN stack Railway\", here are the key findings:\n\n[1] Alice: We chose MERN s"
+      }
+    },
+    {
+      "name": "Evidence items have valid text field (not undefined)",
+      "pass": true,
+      "detail": {
+        "evidenceCount": 1
+      }
+    },
+    {
+      "name": "Very long query (1000 chars) does not crash",
+      "pass": true,
+      "detail": {
+        "status": 200
+      }
+    }
+  ]
+}

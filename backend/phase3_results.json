@@ -1,0 +1,83 @@
+{
+  "passed": 10,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Register user",
+      "pass": true
+    },
+    {
+      "name": "Upload WhatsApp content",
+      "pass": true,
+      "detail": {
+        "inserted": 10
+      }
+    },
+    {
+      "name": "Search with valid query returns response",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "evidenceCount": 1,
+        "summaryLen": 166
+      }
+    },
+    {
+      "name": "Search MERN stack query returns relevant fragments",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "evidence": 4
+      }
+    },
+    {
+      "name": "Search with empty query returns 400",
+      "pass": true,
+      "detail": {
+        "status": 400
+      }
+    },
+    {
+      "name": "Search with missing q field returns 400",
+      "pass": true,
+      "detail": {
+        "status": 400
+      }
+    },
+    {
+      "name": "Search with long query (500 chars) succeeds",
+      "pass": true,
+      "detail": {
+        "status": 200
+      }
+    },
+    {
+      "name": "Search with unrelated query returns graceful empty result (no crash)",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "evidenceCount": 0
+      }
+    },
+    {
+      "name": "Search without auth returns 401",
+      "pass": true,
+      "detail": {
+        "status": 401
+      }
+    },
+    {
+      "name": "Response always has evidence, timeline, graph fields",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "fields": [
+          "summary",
+          "evidence",
+          "timeline",
+          "graph"
+        ]
+      }
+    }
+  ]
+}

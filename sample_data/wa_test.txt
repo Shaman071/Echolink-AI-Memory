@@ -1,0 +1,3 @@
+12/01/2025, 8:32 PM - You: Let's use React
+12/01/2025, 8:33 PM - Ravi: MERN is easier
+12/01/2025, 8:35 PM - Meena: React ecosystem is strong

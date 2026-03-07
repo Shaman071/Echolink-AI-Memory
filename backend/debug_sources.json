@@ -1,0 +1,61 @@
+{
+  "results": [
+    {
+      "$__": {
+        "activePaths": {
+          "paths": {
+            "type": "init",
+            "title": "init",
+            "user": "init",
+            "status": "init",
+            "_id": "init",
+            "filePath": "init",
+            "fileType": "init",
+            "fileSize": "init",
+            "createdAt": "init",
+            "updatedAt": "init",
+            "__v": "init"
+          },
+          "states": {
+            "require": {},
+            "default": {},
+            "init": {
+              "_id": true,
+              "user": true,
+              "title": true,
+              "type": true,
+              "filePath": true,
+              "fileType": true,
+              "fileSize": true,
+              "status": true,
+              "createdAt": true,
+              "updatedAt": true,
+              "__v": true
+            }
+          }
+        },
+        "skipId": true
+      },
+      "$isNew": false,
+      "_doc": {
+        "error": {},
+        "_id": "6915cd4a17902cc008e1c32b",
+        "user": "6915cc4ccc703b1a6cfaa421",
+        "title": "sample_whatsapp.txt",
+        "type": "whatsapp",
+        "filePath": "D:\\Echolink\\backend\\uploads\\1763036490940-sample_whatsapp.txt",
+        "fileType": "text/plain",
+        "fileSize": 621,
+        "status": "indexed",
+        "createdAt": "2025-11-13T12:21:30.957Z",
+        "updatedAt": "2025-11-13T12:22:09.833Z",
+        "__v": 0
+      },
+      "fragmentCount": 10
+    }
+  ],
+  "page": 1,
+  "limit": 1,
+  "totalPages": 1,
+  "totalResults": 1
+}

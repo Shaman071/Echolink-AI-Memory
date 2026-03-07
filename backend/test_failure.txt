@@ -1,0 +1,5 @@
+Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeDefined[2m()[22m
+
+Received: [31mundefined[39m
+    at Object.toBeDefined (D:\Echolink\backend\tests\auth.test.js:232:36)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)

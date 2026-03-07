@@ -1,0 +1,70 @@
+{
+  "passed": 8,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Register user 1",
+      "pass": true
+    },
+    {
+      "name": "Register user 2",
+      "pass": true
+    },
+    {
+      "name": "Upload content for user 1",
+      "pass": true,
+      "detail": {
+        "inserted": 3
+      }
+    },
+    {
+      "name": "GET /api/admin/status has correct shape",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "shape": [
+          "totalFragments",
+          "totalSources",
+          "totalLinks",
+          "totalQueries",
+          "totalUsers",
+          "processingCount",
+          "errorCount",
+          "recentActivity",
+          "status",
+          "timestamp"
+        ]
+      }
+    },
+    {
+      "name": "User 1 stats show sources count > 0",
+      "pass": true,
+      "detail": {
+        "totalSources": 1,
+        "totalFragments": 3
+      }
+    },
+    {
+      "name": "User 2 stats isolated (0 sources, 0 fragments)",
+      "pass": true,
+      "detail": {
+        "totalSources": 0,
+        "totalFragments": 0
+      }
+    },
+    {
+      "name": "GET /api/admin/status without auth returns 401",
+      "pass": true,
+      "detail": {
+        "status": 401
+      }
+    },
+    {
+      "name": "recentActivity items have type, description, timestamp fields",
+      "pass": true,
+      "detail": {
+        "count": 1
+      }
+    }
+  ]
+}

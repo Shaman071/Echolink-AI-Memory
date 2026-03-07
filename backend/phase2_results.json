@@ -1,0 +1,61 @@
+{
+  "passed": 8,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Register test user",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "name": "Login test user",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "name": "Upload WhatsApp .txt file to /api/import/whatsapp",
+      "pass": true,
+      "detail": {
+        "sourceId": "69986b3268b45dfeef94eae2",
+        "inserted": 10
+      }
+    },
+    {
+      "name": "Verify fragments created in DB (GET /api/import/sources/:id)",
+      "pass": true,
+      "detail": {
+        "fragmentCount": 10,
+        "status": "indexing"
+      }
+    },
+    {
+      "name": "GET /api/import/sources (list all sources)",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "count": 1
+      }
+    },
+    {
+      "name": "DELETE /api/import/sources/:id (cascade delete)",
+      "pass": true,
+      "detail": {
+        "success": true
+      }
+    },
+    {
+      "name": "Verify source is gone after delete (should return 404)",
+      "pass": true,
+      "detail": {
+        "status": 404
+      }
+    },
+    {
+      "name": "Upload with no file => 400",
+      "pass": true,
+      "detail": {
+        "status": 400
+      }
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+ECHOLINK PROJECT - COMPREHENSIVE FEATURE AUDIT
+===============================================
+Date: 2025-11-08
+Status: In Progress
+
+SECTION 1: USER AUTHENTICATION & PROFILE
+-----------------------------------------
+✅ Register/login with email + password
+❌ OAuth integration (Google, GitHub, etc.)
+✅ User settings model with preferences
+✅ Encryption passphrase metadata storage
+✅ Local-first / cloud-sync toggle in user model
+✅ JWT token-based authentication
+✅ Password hashing with bcrypt
+✅ User profile management
+
+SECTION 2: IMPORTERS
+---------------------
+✅ WhatsApp .txt export parser
+✅ PDF upload and parsing
+✅ DOCX upload and parsing
+✅ Plain text upload
+✅ Manual note creation (via text import)
+❌ Screenshot upload with OCR
+❌ PNG/JPG image OCR processing
+❌ Google Drive connector (OAuth)
+❌ Gmail connector (OAuth)
+❌ Slack connector (OAuth)
+
+SECTION 3: PARSING & INGESTION
+-------------------------------
+✅ Parse uploaded files into Fragments
+✅ Extract metadata (sender, datetime, source)
+✅ Timestamp extraction from WhatsApp
+✅ Topic/keyword extraction (partially - needs enhancement)
+❌ OCR for images
+❌ OCR for PDF pages
+✅ Continuation line handling in WhatsApp parser
+✅ Multiple locale support for WhatsApp dates
+
+SECTION 4: INDEXING & EMBEDDINGS
+---------------------------------
+✅ Compute embeddings using sentence-transformers
+✅ Store embedding vectors in Fragment model
+✅ FAISS fallback service (embed_service)
+✅ OpenAI embeddings fallback option
+✅ MongoDB vector storage support
+⚠️  Vector search implementation (needs optimization)
+
+SECTION 5: LINKING & GRAPH
+---------------------------
+✅ Link model with relations (same_topic, followup, supports, contradicts)
+✅ Link weights/strength storage
+❌ Automatic link building between fragments
+❌ Link worker/background job for auto-linking
+✅ Manual link creation via API
+✅ Link CRUD operations
+
+SECTION 6: QUERYING
+--------------------
+✅ Natural language query box (UI exists)
+✅ Semantic search via embeddings
+✅ Top-K fragment retrieval
+❌ LLM-based summarization with citations
+⚠️  Summary generation (basic implementation exists, needs LLM integration)
+✅ Query history storage (Query model exists)
+
+SECTION 7: RESULTS & EXPLAINABILITY
+------------------------------------
+✅ Evidence cards with text, sender, timestamp
+❌ Matched snippet highlighting
+✅ Timeline view showing chronological fragments
+✅ Interactive graph visualization (MemoryGraph component)
+✅ Nodes and edges rendering
+❌ "Show decision chain" mode for causal visualization
+❌ Evidence bundle export (PDF)
+
+SECTION 8: PRIVACY & SECURITY
+------------------------------
+✅ Local-first operation option (user preference)
+✅ Client-side encryption metadata storage
+❌ AES encryption implementation for cloud sync
+❌ User-owned encryption key management
+❌ Role-based access control for shared memories
+✅ JWT-based endpoint protection
+✅ Input validation
+✅ File size limits
+⚠️  Prompt injection protection (needs review)
+❌ Rate limiting for API calls
+
+SECTION 9: UX EXTRAS
+---------------------
+✅ Dark mode support (theme preference in user model)
+❌ Auto-suggest prompts in query box
+❌ Sample queries display
+❌ Snapshots/export of evidence bundles
+❌ Undo/delete fragment feature (delete exists, undo missing)
+❌ Redaction feature
+✅ Drag & drop file upload
+✅ Upload progress indicators
+✅ Skeleton loaders
+
+SECTION 10: ADMIN & DIAGNOSTICS
+--------------------------------
+❌ Upload logs viewer
+❌ Reindex button
+❌ Worker status display
+✅ Health check endpoints
+✅ Error logging system
+❌ Admin dashboard
+
+PRIORITY FIXES NEEDED:
+======================
+1. Fix Table component missing error
+2. Implement OCR for screenshots
+3. Add LLM-based summarization
+4. Implement auto-link building worker
+5. Add OAuth connectors
+6. Implement encryption for cloud sync
+7. Add rate limiting
+8. Create admin dashboard
+9. Implement snippet highlighting
+10. Add decision chain visualization

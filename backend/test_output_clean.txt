@@ -1,0 +1,495 @@
+﻿node.exe : [baseline-br
+owser-mapping] The 
+data in this module is 
+over two months old.  
+To ensure accurate 
+Baseline data, please 
+update: `npm i baseline
+-browser-mapping@latest
+ -D`
+At C:\Program Files\nod
+ejs\npx.ps1:29 char:3
++   & $NODE_EXE 
+$NPX_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~
+    + CategoryInfo     
+         : 
+NotSpecified: ([ba    
+seline-brows...ping@la 
+   test -D`:String) 
+[], R    emoteException
+    + 
+FullyQualifiedErrorI   
+ d : NativeCommandError
+ 
+[2026-03-05 09:18:48.882 PM] [32minfo[39m: 	[32mDetected Google Gemini API Key. Initializing Google Generative AI.[39m
+  console.log
+    Skipping mongoose.connect in test environment (tests should connect their own DB)
+
+      at Object.log (server.js:80:11)
+
+  console.log
+    Setting up test database...
+
+      at Object.log (tests/auth.test.js:24:13)
+
+  console.log
+    Mongoose connection state: 1
+
+      at Object.log (tests/auth.test.js:25:13)
+
+  console.log
+    Mongoose models registered: [ 'User', 'Fragment', 'Source', 'Link', 'Query', 'RefreshToken' ]
+
+      at Object.log (tests/auth.test.js:26:13)
+
+  console.log
+    Password modified, hashing password: { passwordLength: 12, isNew: true }
+
+      at model.log (src/models/User.model.js:135:13)
+
+  console.log
+    Password hashed: { originalLength: 12, hashedLength: 60 }
+
+      at model.log (src/models/User.model.js:148:15)
+
+  console.log
+    Test user created: {
+      id: '69a9a5e31f90fc16d46daba6',
+      email: 'jest@example.com',
+      passwordLength: 60
+    }
+
+      at Object.log (tests/auth.test.js:36:13)
+
+  console.log
+    Existing user found, creating refresh token: { userId: new ObjectId("69a9a5e31f90fc16d46daba6") }
+
+      at log (src/controllers/auth.controller.js:108:15)
+
+  console.log
+    Refresh token created: { found: true, userId: new ObjectId("69a9a5e31f90fc16d46daba6") }
+
+      at log (src/controllers/auth.controller.js:115:15)
+
+[0mPOST /api/auth/register [32m200[0m 148.300 ms - 620[0m
+  console.log
+    Checking test user after test...
+
+      at Object.log (tests/auth.test.js:45:13)
+
+  console.log
+    Test user exists: {
+      email: 'jest@example.com',
+      passwordLength: 60,
+      hasPasswordMethod: true
+    }
+
+      at Object.log (tests/auth.test.js:48:15)
+
+  console.log
+    Looking up user: { email: 'jest@example.com' }
+
+      at log (src/controllers/auth.controller.js:195:13)
+
+  console.log
+    User lookup result: { found: true, hasPasswordMethod: true, passwordLength: 60 }
+
+      at log (src/controllers/auth.controller.js:197:13)
+
+  console.log
+    Checking password match...
+
+      at log (src/controllers/auth.controller.js:207:13)
+
+  console.log
+    Comparing passwords: { hashedLength: 60, plainLength: 12 }
+
+      at model.log [as isPasswordMatch] (src/models/User.model.js:119:13)
+
+  console.log
+    Password comparison result: true
+
+      at model.log [as isPasswordMatch] (src/models/User.model.js:124:13)
+
+  console.log
+    Password match result: true
+
+      at log (src/controllers/auth.controller.js:209:13)
+
+  console.log
+    Creating refresh token: { userId: new ObjectId("69a9a5e31f90fc16d46daba6") }
+
+      at log (src/controllers/auth.controller.js:219:13)
+
+  console.log
+    Refresh token created: { found: true, userId: new ObjectId("69a9a5e31f90fc16d46daba6") }
+
+      at log (src/controllers/auth.controller.js:225:13)
+
+[0mPOST /api/auth/login [32m200[0m 227.826 ms - 365[0m
+  console.log
+    Checking test user after test...
+
+      at Object.log (tests/auth.test.js:45:13)
+
+  console.log
+    Test user exists: {
+      email: 'jest@example.com',
+      passwordLength: 60,
+      hasPasswordMethod: true
+    }
+
+      at Object.log (tests/auth.test.js:48:15)
+
+  console.log
+    Looking up user: { email: 'jest@example.com' }
+
+      at log (src/controllers/auth.controller.js:195:13)
+
+  console.log
+    User lookup result: { found: true, hasPasswordMethod: true, passwordLength: 60 }
+
+      at log (src/controllers/auth.controller.js:197:13)
+
+  console.log
+    Checking password match...
+
+      at log (src/controllers/auth.controller.js:207:13)
+
+  console.log
+    Comparing passwords: { hashedLength: 60, plainLength: 12 }
+
+      at model.log [as isPasswordMatch] (src/models/User.model.js:119:13)
+
+  console.log
+    Password comparison result: true
+
+      at model.log [as isPasswordMatch] (src/models/User.model.js:124:13)
+
+  console.log
+    Password match result: true
+
+      at log (src/controllers/auth.controller.js:209:13)
+
+  console.log
+    Creating refresh token: { userId: new ObjectId("69a9a5e31f90fc16d46daba6") }
+
+      at log (src/controllers/auth.controller.js:219:13)
+
+  console.log
+    Refresh token created: { found: true, userId: new ObjectId("69a9a5e31f90fc16d46daba6") }
+
+      at log (src/controllers/auth.controller.js:225:13)
+
+[0mPOST /api/auth/login [32m200[0m 253.587 ms - 365[0m
+  console.log
+    Looking up token by hash: {
+      tokenHash: '43dc8e35fde15a4fe6183ef93b20684d7a369276ab867bdf71ece57f92b412d8'
+    }
+
+      at log (src/services/refreshToken.service.js:32:11)
+
+  console.log
+    Found token document: { found: true, isActive: true }
+
+      at log (src/services/refreshToken.service.js:34:11)
+
+[0mPOST /api/auth/refresh-tokens [32m200[0m 77.897 ms - 264[0m
+  console.log
+    Checking test user after test...
+
+      at Object.log (tests/auth.test.js:45:13)
+
+  console.log
+    Test user exists: {
+      email: 'jest@example.com',
+      passwordLength: 60,
+      hasPasswordMethod: true
+    }
+
+      at Object.log (tests/auth.test.js:48:15)
+
+[0mPOST /api/auth/request-password-reset [32m200[0m 7.554 ms - 136[0m
+  console.log
+    Password modified, hashing password: { passwordLength: 15, isNew: false }
+
+      at model.log (src/models/User.model.js:135:13)
+
+  console.log
+    Password hashed: { originalLength: 15, hashedLength: 60 }
+
+      at model.log (src/models/User.model.js:148:15)
+
+[0mPOST /api/auth/reset-password [32m200[0m 183.479 ms - 49[0m
+  console.log
+    Looking up user: { email: 'jest@example.com' }
+
+      at log (src/controllers/auth.controller.js:195:13)
+
+  console.log
+    User lookup result: { found: true, hasPasswordMethod: true, passwordLength: 60 }
+
+      at log (src/controllers/auth.controller.js:197:13)
+
+  console.log
+    Checking password match...
+
+      at log (src/controllers/auth.controller.js:207:13)
+
+  console.log
+    Comparing passwords: { hashedLength: 60, plainLength: 15 }
+
+      at model.log [as isPasswordMatch] (src/models/User.model.js:119:13)
+
+  console.log
+    Password comparison result: true
+
+      at model.log [as isPasswordMatch] (src/models/User.model.js:124:13)
+
+  console.log
+    Password match result: true
+
+      at log (src/controllers/auth.controller.js:209:13)
+
+  console.log
+    Creating refresh token: { userId: new ObjectId("69a9a5e31f90fc16d46daba6") }
+
+      at log (src/controllers/auth.controller.js:219:13)
+
+  console.log
+    Refresh token created: { found: true, userId: new ObjectId("69a9a5e31f90fc16d46daba6") }
+
+      at log (src/controllers/auth.controller.js:225:13)
+
+[0mPOST /api/auth/login [32m200[0m 201.227 ms - 365[0m
+  console.log
+    Checking test user after test...
+
+      at Object.log (tests/auth.test.js:45:13)
+
+  console.log
+    Test user exists: {
+      email: 'jest@example.com',
+      passwordLength: 60,
+      hasPasswordMethod: true
+    }
+
+      at Object.log (tests/auth.test.js:48:15)
+
+[0mPOST /api/auth/request-email-verification [32m200[0m 7.617 ms - 134[0m
+[0mPOST /api/auth/verify-email [32m200[0m 11.349 ms - 38[0m
+  console.log
+    Checking test user after test...
+
+      at Object.log (tests/auth.test.js:45:13)
+
+  console.log
+    Test user exists: {
+      email: 'jest@example.com',
+      passwordLength: 60,
+      hasPasswordMethod: true
+    }
+
+      at Object.log (tests/auth.test.js:48:15)
+
+  console.log
+    Looking up user: { email: 'jest@example.com' }
+
+      at log (src/controllers/auth.controller.js:195:13)
+
+  console.log
+    User lookup result: { found: true, hasPasswordMethod: true, passwordLength: 60 }
+
+      at log (src/controllers/auth.controller.js:197:13)
+
+  console.log
+    Checking password match...
+
+      at log (src/controllers/auth.controller.js:207:13)
+
+  console.log
+    Comparing passwords: { hashedLength: 60, plainLength: 15 }
+
+      at model.log [as isPasswordMatch] (src/models/User.model.js:119:13)
+
+  console.log
+    Password comparison result: true
+
+      at model.log [as isPasswordMatch] (src/models/User.model.js:124:13)
+
+  console.log
+    Password match result: true
+
+      at log (src/controllers/auth.controller.js:209:13)
+
+  console.log
+    Creating refresh token: { userId: new ObjectId("69a9a5e31f90fc16d46daba6") }
+
+      at log (src/controllers/auth.controller.js:219:13)
+
+  console.log
+    Refresh token created: { found: true, userId: new ObjectId("69a9a5e31f90fc16d46daba6") }
+
+      at log (src/controllers/auth.controller.js:225:13)
+
+[0mPOST /api/auth/login [32m200[0m 188.033 ms - 365[0m
+  console.log
+    Attempting logout with refresh token: true
+
+      at log (src/controllers/auth.controller.js:266:13)
+
+  console.log
+    Looking up token by hash: {
+      tokenHash: '43dc8e35fde15a4fe6183ef93b20684d7a369276ab867bdf71ece57f92b412d8'
+    }
+
+      at log (src/services/refreshToken.service.js:32:11)
+
+  console.log
+    Found token document: { found: true, isActive: false }
+
+      at log (src/services/refreshToken.service.js:34:11)
+
+  console.log
+    Found token document: { found: true, isActive: false }
+
+      at log (src/controllers/auth.controller.js:271:17)
+
+[0mPOST /api/auth/logout [32m200[0m 19.121 ms - 37[0m
+  console.log
+    Logout headers: {
+      'x-powered-by': 'Express',
+      vary: 'Origin',
+      'access-control-allow-credentials': 'true',
+      'set-cookie': [
+        'refreshToken=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT; HttpOnly; SameSite=Lax',
+        'accessToken=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT; HttpOnly; SameSite=Lax'
+      ],
+      'content-type': 'application/json; charset=utf-8',
+      'content-length': '37',
+      etag: 'W/"25-71uUsMgZY3FdZp9j1h5YMrBIOgg"',
+      date: 'Thu, 05 Mar 2026 15:48:55 GMT',
+      connection: 'close'
+    }
+
+      at Object.log (tests/auth.test.js:226:15)
+
+  console.log
+    Checking test user after test...
+
+      at Object.log (tests/auth.test.js:45:13)
+
+  console.log
+    Test user exists: {
+      email: 'jest@example.com',
+      passwordLength: 60,
+      hasPasswordMethod: true
+    }
+
+      at Object.log (tests/auth.test.js:48:15)
+
+  console.log
+    Final cleanup...
+
+      at Object.log (tests/auth.test.js:60:13)
+
+FAIL 
+tests/auth.test.js 
+(14.963 s)
+  Auth flows
+    registration and 
+login
+      ΓêÜ existing 
+user returns tokens on 
+register (1304 ms)
+      ΓêÜ login 
+returns access token 
+and sets refresh 
+cookie (251 ms)
+    token refresh
+      ΓêÜ refresh 
+rotates token and 
+returns new access 
+token (894 ms)
+    password reset
+      ΓêÜ request 
+password reset returns 
+token (demo behaviour) 
+and reset works (429 
+ms)
+    email verification
+      ΓêÜ email 
+verification demo flow 
+(66 ms)
+    logout
+      ├ù logout 
+revokes refresh token 
+and clears cookie (750 
+ms)
+
+  ΓùÅ Auth flows ΓÇ║ 
+logout ΓÇ║ logout 
+revokes refresh token 
+and clears cookie
+
+    expect(received).to
+BeDefined()
+
+    Received: undefined
+
+    [0m [90m 231 
+|[39m       [90m// 
+Verify token is 
+revoked in DB[39m
+     [90m 232 |[39m  
+     [36mconst[39m 
+tokenAfter [33m=[39m 
+[36mawait[39m [33mRe
+freshToken[39m[33m.[
+39mfindById(tokenBefore
+[33m.[39m_id)[33m;[
+39m
+    [31m[1m>[22m[39
+m[90m 233 |[39m      
+ expect(tokenAfter[33m
+.[39mrevokedAt)[33m.
+[39mtoBeDefined()[33m;
+[39m
+     [90m     |[39m  
+                       
+           
+[31m[1m^[22m[39m
+     [90m 234 |[39m  
+     expect(tokenAfter
+[33m.[39misActive)[33
+m.[39mtoBeFalsy()[33m
+;[39m
+     [90m 235 |[39m
+     [90m 236 |[39m  
+     [90m// Verify 
+refresh token no 
+longer works[39m[0m
+
+      at 
+Object.toBeDefined (tes
+ts/auth.test.js:233:36)
+
+Test Suites: 1 failed, 
+1 total
+Tests:       1 failed, 
+5 passed, 6 total
+Snapshots:   0 total
+Time:        15.126 s
+Ran all test suites 
+matching 
+/tests\\auth.test.js/i.
+Force exiting Jest: 
+Have you considered 
+using 
+`--detectOpenHandles` 
+to detect async 
+operations that kept 
+running after all 
+tests finished?

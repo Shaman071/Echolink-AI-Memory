@@ -1,0 +1,9 @@
+This is a test document for the Echolink application.
+
+It contains multiple paragraphs to test the text parsing functionality.
+
+Each paragraph should be processed as a separate fragment.
+
+The system should be able to handle special characters: !@#$%^&*()_+{}|:<>?~`-=[]\\;',./
+
+It should also handle line breaks\nwithin a single paragraph.

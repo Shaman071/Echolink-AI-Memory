@@ -1,0 +1,105 @@
+{
+  "passed": 8,
+  "failed": 0,
+  "results": [
+    {
+      "name": "GET /api/status",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "status": "running",
+        "version": "1.0.0",
+        "timestamp": "2026-02-20T13:32:51.959Z",
+        "uptime": 7,
+        "db": "connected"
+      }
+    },
+    {
+      "name": "GET /health",
+      "pass": true,
+      "detail": {
+        "status": "ok",
+        "timestamp": "2026-02-20T13:32:51.972Z",
+        "metrics": {
+          "requests": 2,
+          "errors": 0,
+          "lastError": null
+        }
+      }
+    },
+    {
+      "name": "POST /api/auth/register",
+      "pass": true,
+      "detail": {
+        "email": "p1_1771594371933@test.com"
+      }
+    },
+    {
+      "name": "POST /api/auth/login",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "name": "GET /api/auth/me (with token)",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "body": {
+          "user": {
+            "id": "6998628468b45dfeef94eacc",
+            "name": "Phase1 Tester",
+            "email": "p1_1771594371933@test.com",
+            "role": "user",
+            "preferences": {
+              "notifications": {
+                "email": true,
+                "push": true
+              },
+              "localFirst": false,
+              "theme": "system",
+              "encryptionEnabled": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "GET /api/auth/me (no token) => 401",
+      "pass": true,
+      "detail": {
+        "status": 401,
+        "body": {
+          "ok": false,
+          "code": 401,
+          "message": "Authentication required",
+          "stack": "Error: Authentication required\n    at authenticate (d:\\Echolink\\backend\\src\\middleware\\auth.middleware.js:18:13)\n    at Layer.handle [as handle_request] (d:\\Echolink\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (d:\\Echolink\\backend\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (d:\\Echolink\\backend\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (d:\\Echolink\\backend\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at d:\\Echolink\\backend\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (d:\\Echolink\\backend\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (d:\\Echolink\\backend\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (d:\\Echolink\\backend\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (d:\\Echolink\\backend\\node_modules\\express\\lib\\router\\index.js:47:12)"
+        }
+      }
+    },
+    {
+      "name": "POST /api/auth/login wrong password => 40x",
+      "pass": true,
+      "detail": {
+        "status": 401
+      }
+    },
+    {
+      "name": "POST /api/auth/register missing fields => 400",
+      "pass": true,
+      "detail": {
+        "status": 400,
+        "body": {
+          "success": false,
+          "errors": [
+            {
+              "message": "Name is required"
+            },
+            {
+              "message": "Password must be at least 8 characters long"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

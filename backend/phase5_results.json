@@ -1,0 +1,62 @@
+{
+  "passed": 8,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Register user",
+      "pass": true
+    },
+    {
+      "name": "Upload content",
+      "pass": true,
+      "detail": {
+        "inserted": 6
+      }
+    },
+    {
+      "name": "GET /api/links returns valid response (no links yet)",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "type": "object"
+      }
+    },
+    {
+      "name": "POST /api/links/rebuild returns success (even if 0 links, no crash)",
+      "pass": true,
+      "detail": {
+        "status": 200,
+        "linksCreated": 0
+      }
+    },
+    {
+      "name": "GET /api/links without auth returns 401",
+      "pass": true,
+      "detail": {
+        "status": 401
+      }
+    },
+    {
+      "name": "POST /api/links/rebuild without auth returns 401",
+      "pass": true,
+      "detail": {
+        "status": 401
+      }
+    },
+    {
+      "name": "POST /api/query graph field is always valid {nodes, edges}",
+      "pass": true,
+      "detail": {
+        "nodes": 1,
+        "edges": 0
+      }
+    },
+    {
+      "name": "GET /api/links/graph returns nodes/edges or 404 (not 500)",
+      "pass": true,
+      "detail": {
+        "status": 404
+      }
+    }
+  ]
+}

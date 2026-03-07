@@ -1,0 +1,8 @@
+This is a sample document for EchoLink.
+EchoLink helps users recall information from their chats and documents.
+It uses vector embeddings and RAG to answer natural language questions.
+We are testing if the upload and ingestion pipeline works correctly.
+The system should extract this text, chunk it, and index it.
+Questions to ask:
+- What does EchoLink help users do?
+- How does it answer questions?
